@@ -68,9 +68,9 @@ jobs:
           rm -f ./.config*
           touch ./.config
           cat >> .config <<EOF
-          CONFIG_TARGET_ar71xx=y
-          CONFIG_TARGET_ar71xx_DEVICE_WNDR4300V1=y
-          CONFIG_TARGET_BOARD="ar71xx"
+          CONFIG_TARGET_ipq40xx=y
+          CONFIG_TARGET_ipq40xx_DEVICE_asus_rt-ac58u=y
+          CONFIG_TARGET_BOARD="ipq40xx"
           EOF
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
